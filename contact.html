@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="lend.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo-img"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="info-section" style="margin-top: 80px;">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you. Reach out through the form below.</p>
+
+  <form class="contact-form" onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 MyLandingPage | Built with ❤️</p>
+</footer>
+
+<script>
+  function submitForm(e) {
+    e.preventDefault();
+    alert("Thank you for contacting us!");
+  }
+</script>
+
+</body>
+</html>
+<!-- <script src="script.js"></script> -->
